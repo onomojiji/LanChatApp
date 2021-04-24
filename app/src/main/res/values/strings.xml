@@ -1,5 +1,15 @@
 <resources>
-    <string name="app_name">ChitChat</string>
-    <string name="first">1. To save chat use <b>save chat</b> command. \n2. To remove all the chat use <b>Remove all chat</b> command. \n3. To disconnect use <b>Disconnect</b> command. \n4. To change the background use <b>Change background as<i>(your choice)</i></b> command. \n5. To disable the voice enable mode you can use either <b>Voice mode off</b> command or can <b>manually disable it</b>. \n6. To share a file use <b>Share a file</b> command. \n7. To reset layout as default use <b>Reset layout</b> command.</string>
+    <string name="app_name">LanChatApp</string>
+    <string name="first">1. Pour Sauvegarder la conversation, cliquez sur <b>Sauvegarder la conversation</b>. \n2. To remove all the chat use <b>Remove all chat</b> command. \n3. To disconnect use <b>Disconnect</b> command. \n4. To change the background use <b>Change background as<i>(your choice)</i></b> command. \n5. To disable the voice enable mode you can use either <b>Voice mode off</b> command or can <b>manually disable it</b>. \n6. To share a file use <b>Share a file</b> command. \n7. To reset layout as default use <b>Reset layout</b> command.</string>
+    <string name="enregistrer_la_discussion">Enregistrer la discussion</string>
+    <string name="changer_le_fond_d_cran">Changer le fond d\'écran</string>
+    <string name="se_d_connecter">Se déconnecter</string>
+    <string name="reinitialiser_le_fond_d_cran">Reinitialiser le fond d\'écran</string>
+    <string name="mode_voix_off">Mode voix : Off</string>
+    <string name="supprimer_la_discussion">Supprimer la discussion</string>
+    <string name="obtenir_mon_ip">Obtenir mon IP</string>
+    <string name="reinitialiser_le_th_me">Reinitialiser le Thème</string>
+    <string name="mode_voix_eteint">Mode Voix : Eteint</string>
+    <string name="passer_un_appel">Passer un Appel</string>
 
 </resources>

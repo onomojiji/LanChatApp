@@ -12,33 +12,30 @@
         android:layout_width="379dp"
         android:layout_height="300dp"
         android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
         android:layout_marginTop="54dp"
-        android:src="@drawable/logo" />
-
+        android:src="@drawable/logo4_12_14366" />
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="535dp"
+        android:layout_marginTop="525dp"
         android:gravity="center"
         android:text="POWERED BY"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20dp"
         android:textStyle="bold" />
 
-    <ImageView
+    <TextView
         android:id="@+id/imageView1"
-        android:layout_width="200dp"
-        android:layout_height="57dp"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="550dp"
-        app:srcCompat="@drawable/teamlogo" />
-
-
+        android:text="Onomo inimini Jiji"
+        android:textSize="30dp" />
 
 
 </RelativeLayout>

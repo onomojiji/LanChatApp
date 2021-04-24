@@ -1,6 +1,5 @@
-package com.example.p2pmessenger;
+package com.example.lanchatapp;
 
-import java.io.*;
 import java.net.*;
 import java.util.*;
 //import org.apache.http.conn.util.InetAddressUtils;

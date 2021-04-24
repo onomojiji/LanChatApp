@@ -14,43 +14,43 @@
             android:id="@+id/btn_bg1"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/rounded_red"
-            android:text="Layout 1"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:textSize="16sp"
             android:layout_weight="1"
-            android:textStyle="bold"/>
+            android:background="@drawable/rounded_blacki"
+            android:text="Thème1"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_bg2"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/rounded_purple"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:text="Layout 2"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_blacki"
+            android:text="Thème2"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:layout_weight="1"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_bg3"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/rounded_pink"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:text="Layout 3"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_blacki"
+            android:text="Thème3"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:layout_weight="1"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
     <LinearLayout
@@ -62,43 +62,43 @@
             android:id="@+id/btn_bg4"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/rounded_paste"
-            android:text="Layout 4"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:textSize="16sp"
             android:layout_weight="1"
-            android:textStyle="bold"/>
+            android:background="@drawable/rounded_blacki"
+            android:text="Thème4"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_bg5"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/rounded_green"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:text="Layout 5"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_blacki"
+            android:text="Thème1"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:layout_weight="1"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_bg6"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/rounded_magenta"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:text="Layout 6"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_blacki"
+            android:text="Thème6"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:layout_weight="1"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
     <LinearLayout
@@ -110,43 +110,43 @@
             android:id="@+id/btn_bg7"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/rounded_blacki"
-            android:text="Layout 7"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:textSize="16sp"
             android:layout_weight="1"
-            android:textStyle="bold"/>
+            android:background="@drawable/rounded_blacki"
+            android:text="Thème7"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_bg8"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/rounded_yellow"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:text="Layout 8"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_blacki"
+            android:text="Thème8"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:layout_weight="1"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/btn_bg9"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/rounded_tomato"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:text="Layout 9"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_blacki"
+            android:text="Thème9"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            android:layout_weight="1"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
     </LinearLayout>
 

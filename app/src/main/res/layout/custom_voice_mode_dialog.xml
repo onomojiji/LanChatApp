@@ -47,7 +47,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="How to use the voice command?"
+                            android:text="Comment Utiliser les commandes de la voix.?"
                             android:textColor="#000"
                             android:textStyle="bold" />
 
@@ -55,7 +55,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingTop="5dp"
-                            android:text="Turn the voice mode on."
+                            android:text="Activer le mode voix"
                             android:textColor="#000" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -82,15 +82,15 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:text="Comment commander.?"
                             android:textColor="#000"
-                            android:text="How to give the commands?"
                             android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingTop="5dp"
-                            android:text="Just press the bottom left voice icon and speak..."
+                            android:text="Appuyez simplement sur le bouton gauche de la voix et parlez"
                             android:textColor="#000" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -117,7 +117,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="What are the commands?"
+                            android:text="Quelles sont les commandes.?"
                             android:textColor="#000"
                             android:textStyle="bold" />
 
@@ -153,7 +153,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="How to use the voice command for exchanging messages then?"
+                            android:text="Comment utiliser la commande vocale pour échanger les messages.?"
                             android:textColor="#000"
                             android:textStyle="bold" />
 
@@ -161,7 +161,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:paddingTop="5dp"
-                            android:text="Just press the voice icon button and speak."
+                            android:text="Appuyer simplement sur le bouton d'icone vocale  et parlez"
                             android:textColor="#000" />
                     </LinearLayout>
                 </android.support.v7.widget.CardView>
@@ -189,14 +189,14 @@
                         android:id="@+id/btn_yes"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:background="@drawable/rounded_green"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="Okay, GoT It"
+                        android:layout_weight="1"
+                        android:background="@drawable/rounded_green"
+                        android:text="Okay, compris"
                         android:textAllCaps="true"
                         android:textColor="#FFFFFF"
                         android:textSize="18sp"
-                        android:layout_weight="1"
                         android:textStyle="bold" />
 
                 </LinearLayout>

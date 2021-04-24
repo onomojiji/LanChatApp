@@ -1,4 +1,4 @@
-package com.example.p2pmessenger;
+package com.example.lanchatapp;
 
 import android.content.Intent;
 import android.os.Bundle;
