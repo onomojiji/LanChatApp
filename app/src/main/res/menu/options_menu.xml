@@ -36,7 +36,7 @@
 
     <item
         android:id="@+id/main_reset_layout"
-        android:title="@string/reinitialiser_le_th_me"
+        android:title="@string/reinitialiser_le_theme"
         app:showAsAction="never">
         <!-- user click korlei jate ashe -->
 

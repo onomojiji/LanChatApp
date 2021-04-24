@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">LanChatApp</string>
-    <string name="first">1. Pour Sauvegarder la conversation, cliquez sur <b>Sauvegarder la conversation</b>. \n2. To remove all the chat use <b>Remove all chat</b> command. \n3. To disconnect use <b>Disconnect</b> command. \n4. To change the background use <b>Change background as<i>(your choice)</i></b> command. \n5. To disable the voice enable mode you can use either <b>Voice mode off</b> command or can <b>manually disable it</b>. \n6. To share a file use <b>Share a file</b> command. \n7. To reset layout as default use <b>Reset layout</b> command.</string>
+    <string name="first">1. Pour Sauvegarder la discussion, cliquez sur <b>Sauvegarder la discussion</b>. \n2. Pour Supprimer tout le contenu de la discussion, cliquez sur <b>Supprimer la discussion</b> . \n3. Pour vous déconnecter, cliquez sur <b>Se déconnecter</b>. \n4. Pour changer le fond d\'écran, cliquez sur <b>Changer le fond d\'écran</b>. \n5. Pour désactiver le mode commande vocale, cliquez sur <b>Mode Voix : Eteint</b> ou <b>déactivez le manuellement</b>. \n6. Pour partager un fichier, cliquez sur <b>Partager un fichier</b>. \n7. Pour reinitialiser le thème, cliquez sur <b>Reinitialiser le thème</b>.</string>
     <string name="enregistrer_la_discussion">Enregistrer la discussion</string>
     <string name="changer_le_fond_d_cran">Changer le fond d\'écran</string>
     <string name="se_d_connecter">Se déconnecter</string>
@@ -8,8 +8,11 @@
     <string name="mode_voix_off">Mode voix : Off</string>
     <string name="supprimer_la_discussion">Supprimer la discussion</string>
     <string name="obtenir_mon_ip">Obtenir mon IP</string>
-    <string name="reinitialiser_le_th_me">Reinitialiser le Thème</string>
+    <string name="reinitialiser_le_theme">Reinitialiser le Thème</string>
     <string name="mode_voix_eteint">Mode Voix : Eteint</string>
     <string name="passer_un_appel">Passer un Appel</string>
+    <string name="powered_by">POWERED BY</string>
+    <string name="todo">TODO</string>
+    <string name="onomo_inimini_jiji">Onomo inimini Jiji</string>
 
 </resources>

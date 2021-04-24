@@ -131,6 +131,16 @@ public class MainActivity extends AppCompatActivity {
 
         conversations = findViewById(R.id.conversations);
         conversationLayout = findViewById(R.id.scroll_view_linear_layout);
+
+        try {
+            //serverClass = new ServerClass(Integer.parseInt(port));
+            serverClass = new ServerClass(port);
+            serverClass.start();
+            Toast.makeText(this, "Serveur démarré...", Toast.LENGTH_SHORT).show();
+        }
+        catch (Exception e){
+            Toast.makeText(MainActivity.this, "Impossible de démarrer le serveur, Veuillez vérifier vos paramètres de connexion", Toast.LENGTH_SHORT).show();
+        }
     }
 
     // by this method we can access the options inside the menu folder
@@ -367,62 +377,62 @@ public class MainActivity extends AppCompatActivity {
         layout1.setOnClickListener((v) -> {
             String msg =  "bg@%@bg1";
             sendReceive.write(caesarCipherEncryption(msg, shift));
-            Toast.makeText(MainActivity.this, "background is selected as LAYOUT 1", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Fond'écran 1 Sélectionné", Toast.LENGTH_SHORT).show();
             alertDialog.dismiss();
         });
 
         layout2.setOnClickListener((v) -> {
             String msg =  "bg@%@bg2";
             sendReceive.write(caesarCipherEncryption(msg,shift));
-            Toast.makeText(MainActivity.this, "background is selected as LAYOUT 2", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Fond'écran 2 Sélectionné", Toast.LENGTH_SHORT).show();
             alertDialog.dismiss();
         });
 
         layout3.setOnClickListener((v) -> {
             String msg =  "bg@%@bg3";
             sendReceive.write(caesarCipherEncryption(msg,shift));
-            Toast.makeText(MainActivity.this, "background is selected as LAYOUT 3", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Fond'écran 3 Sélectionné", Toast.LENGTH_SHORT).show();
             alertDialog.dismiss();
         });
 
         layout4.setOnClickListener((v) -> {
             String msg =  "bg@%@bg4";
             sendReceive.write(caesarCipherEncryption(msg, shift));
-            Toast.makeText(MainActivity.this, "background is selected as LAYOUT 4", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Fond'écran 4 Sélectionné", Toast.LENGTH_SHORT).show();
             alertDialog.dismiss();
         });
         layout5.setOnClickListener((v)-> {
             String msg =  "bg@%@bg5";
             sendReceive.write(caesarCipherEncryption(msg, shift));
-            Toast.makeText(MainActivity.this, "background is selected as LAYOUT 5", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Fond'écran 5 Sélectionné", Toast.LENGTH_SHORT).show();
             alertDialog.dismiss();
         });
 
         layout6.setOnClickListener((v) -> {
             String msg =  "bg@%@bg6";
             sendReceive.write(caesarCipherEncryption(msg, shift));
-            Toast.makeText(MainActivity.this, "background is selected as LAYOUT 6", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Fond'écran 6 Sélectionné", Toast.LENGTH_SHORT).show();
             alertDialog.dismiss();
         });
 
         layout7.setOnClickListener((v) -> {
             String msg =  "bg@%@bg7";
             sendReceive.write(caesarCipherEncryption(msg, shift));
-            Toast.makeText(MainActivity.this, "background is selected as LAYOUT 7", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Fond'écran 7 Sélectionné", Toast.LENGTH_SHORT).show();
             alertDialog.dismiss();
         });
 
         layout8.setOnClickListener((v) -> {
             String msg =  "bg@%@bg8";
             sendReceive.write(caesarCipherEncryption(msg, shift));
-            Toast.makeText(MainActivity.this, "background is selected as LAYOUT 8", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Fond'écran 8 Sélectionné", Toast.LENGTH_SHORT).show();
             alertDialog.dismiss();
         });
 
         layout9.setOnClickListener((v) -> {
             String msg =  "bg@%@bg9";
             sendReceive.write(caesarCipherEncryption(msg, shift));
-            Toast.makeText(MainActivity.this, "background is selected as LAYOUT 9", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Fond'écran 9 Sélectionné", Toast.LENGTH_SHORT).show();
             alertDialog.dismiss();
         });
 
@@ -460,11 +470,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         else if(msg.equals("bg@%@bg6")){
-            thirdLayout.setBackgroundResource(R.drawable.god_of_war);
+            thirdLayout.setBackgroundResource(R.drawable.all_linux);
             //mToolbar.setBackgroundColor(Color.parseColor("#461D3D"));
         }
         else if(msg.equals("bg@%@bg7")){
-            thirdLayout.setBackgroundResource(R.drawable.diamont);
+            thirdLayout.setBackgroundResource(R.drawable.train_road);
             //mToolbar.setBackgroundColor(Color.parseColor("#2E3F3B"));
         }
         else if(msg.equals("bg@%@bg8")){
@@ -533,7 +543,7 @@ public class MainActivity extends AppCompatActivity {
             else{
                 children = (TextView) conversationLayout.getChildAt(i); // getting the textview
                 // adding messages
-                if(children.getText().toString().contains(".txt a été stocké dans android/data/com.example.p2p/")){
+                if(children.getText().toString().contains(".txt a été stocké dans android/data/com.example.lanchatapp/")){
                     allMessage += "L'Autre: " + children.getText().toString() + "\n\n";
                 }
                 else if(children.getText().toString().contains(".txt a été envoyé")){
@@ -939,8 +949,8 @@ public class MainActivity extends AppCompatActivity {
 
 
             thirdLayout.setVisibility(View.GONE);
-            mToolbar.setBackgroundColor(Color.parseColor("#233E4E"));
-            thirdLayout.setBackgroundResource(R.drawable.all_start_wich_linux);
+            //mToolbar.setBackgroundColor(Color.parseColor("#233E4E"));
+            thirdLayout.setBackgroundResource(R.drawable.screen_broken_best);
             changeBG.setEnabled(false);
             saveChat.setEnabled(false);
             disconnect.setEnabled(false);
@@ -974,23 +984,16 @@ public class MainActivity extends AppCompatActivity {
 
         // if there's a valid input then create a server class on that port so that the client can take data from that port
         else{*/
-        try{
-            //serverClass = new ServerClass(Integer.parseInt(port));
-            serverClass = new ServerClass(port);
-            serverClass.start();
-            Toast.makeText(this, "Serveur démarré...", Toast.LENGTH_SHORT).show();
 
-            // showing the further information
-            targetIPEditText.setVisibility(View.VISIBLE);
-            //targetPortEditText.setVisibility(View.VISIBLE);
-            connectBtn.setVisibility(View.VISIBLE);
-            clickHereBtn.setVisibility(View.VISIBLE);
-            getIPBtn.setVisibility(View.VISIBLE);
-            //encrypKeyEditText.setVisibility(View.VISIBLE);
+        // showing the further information
+        targetIPEditText.setVisibility(View.VISIBLE);
+        //targetPortEditText.setVisibility(View.VISIBLE);
+        connectBtn.setVisibility(View.VISIBLE);
+        clickHereBtn.setVisibility(View.VISIBLE);
+        getIPBtn.setVisibility(View.VISIBLE);
+        //encrypKeyEditText.setVisibility(View.VISIBLE);
 
-        }catch (Exception e){
-            Toast.makeText(MainActivity.this, "Impossible de démarrer le serveur, Veuillez vérifier vos paramètres de connexion", Toast.LENGTH_SHORT).show();
-        }
+
         //}
 
     }
@@ -1158,7 +1161,7 @@ public class MainActivity extends AppCompatActivity {
                 //serverSocket = ((SSLServerSocketFactory)SSLServerSocketFactory.getDefault()).createServerSocket(port);
                 serverSocket = new ServerSocket(port);
                 Looper.prepare();
-                showToast("Server Started. Waiting for client...");
+                //showToast("Server Started. Waiting for client...");
                 Log.d(TAG, "Waiting for client...");
                 socket = serverSocket.accept();
                 Log.d(TAG, "Connection established from server");
@@ -1191,7 +1194,7 @@ public class MainActivity extends AppCompatActivity {
 
                 sendReceive = new SendReceive(socket);
                 sendReceive.start();
-                showToast("Connected to other device. You can now exchange messages.");
+                showToast("Connexion établie. Bonne Discussion...");
 
                 Log.d(TAG, "Client is connected to server");
 
@@ -1199,7 +1202,7 @@ public class MainActivity extends AppCompatActivity {
                 enableComponent();
             } catch (IOException e) {
                 e.printStackTrace();
-                Log.d(TAG, "Can't connect to server. Check the IP address and Port number and try again: " + e);
+                Log.d(TAG, "Impossible de se connecter au serveur. Vérifiez votre connexion puis réessayez : " + e);
             } catch (Exception e) {
                 Log.d(TAG, "ERROR: " + e);
             }
