@@ -981,7 +981,7 @@ public class MainActivity extends AppCompatActivity {
         // changing layout and background
         try {
             clientClass.socket.close();
-            serverClass.socket.close();
+            //serverClass.socket.close();
 
 
             thirdLayout.setVisibility(View.GONE);
@@ -1013,25 +1013,24 @@ public class MainActivity extends AppCompatActivity {
     // whenever on start server is clicked
     public void onStartServerClicked(View v){
 
-        // checking if port is empty or not
-        /*if(TextUtils.isEmpty()){
-            receivePortEditText.requestFocus(); // focusing as an error
-            receivePortEditText.setError("Please write your receive port first"); // showing what need to avoid the error
+        String nameReceiver = receiverName.getText().toString();
+
+        // Vérifie si le champ du nom est vide
+        if(TextUtils.isEmpty(nameReceiver)){
+            receiverName.requestFocus(); // focusing as an error
+            receiverName.setError("Veuillez taper le nom de votre correspondant"); // showing what need to avoid the error
         }
 
         // if there's a valid input then create a server class on that port so that the client can take data from that port
-        else{*/
+        else{
 
-        // showing the further information
-        targetIPEditText.setVisibility(View.VISIBLE);
-        //targetPortEditText.setVisibility(View.VISIBLE);
-        connectBtn.setVisibility(View.VISIBLE);
-        clickHereBtn.setVisibility(View.VISIBLE);
-        getIPBtn.setVisibility(View.VISIBLE);
-        //encrypKeyEditText.setVisibility(View.VISIBLE);
+            // showing the further information
+            targetIPEditText.setVisibility(View.VISIBLE);
+            connectBtn.setVisibility(View.VISIBLE);
+            clickHereBtn.setVisibility(View.VISIBLE);
+            getIPBtn.setVisibility(View.VISIBLE);
 
-
-        //}
+        }
 
     }
 
@@ -1039,22 +1038,16 @@ public class MainActivity extends AppCompatActivity {
     public void onConnectClicked(View v){
 
         String name = receiverName.getText().toString();
-
-        getSupportActionBar().setTitle(name); // giving the title
-
-        //String port = targetPortEditText.getText().toString();
         String tergetIP = targetIPEditText.getText().toString();
-        //String encrypKey = encrypKeyEditText.getText().toString(); // takling the encryption key shift number
-        //shift = Integer.parseInt(encrypKey);
 
         // checking is empty or not
-        /*if(TextUtils.isEmpty(port)){
-            targetPortEditText.requestFocus();
-            targetPortEditText.setError("Please write your target port first");
-        }*/
+        if(TextUtils.isEmpty(tergetIP)){
+            targetIPEditText.requestFocus();
+            targetIPEditText.setError("Veuillez entrer l'adresse IP de votre correspondant");
+        }
 
         // checking self ip or not
-        if(tergetIP.equals(ip)){
+        else if(tergetIP.equals(ip)){
             targetIPEditText.requestFocus();
             targetIPEditText.setError("Ceci est votre IP, merci de fournir une adresse différente");
         }
@@ -1064,6 +1057,7 @@ public class MainActivity extends AppCompatActivity {
             try{
                 clientClass = new ClientClass(tergetIP, port);
                 clientClass.start();
+                getSupportActionBar().setTitle(name); // change le titre de la barre par le nom du correspondant
                 // showing success message
                 Toast.makeText(MainActivity.this, "Vous vous êtes connecté avec succès", Toast.LENGTH_SHORT).show();
             }catch (Exception e){
