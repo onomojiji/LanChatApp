@@ -148,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
 
         super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_horizontal, menu); // ajout de l'icone d'appel...
         getMenuInflater().inflate(R.menu.options_menu, menu); // linking up with menu option resource file
 
         changeBG = menu.findItem(R.id.main_change_bg_option);
@@ -156,7 +157,8 @@ public class MainActivity extends AppCompatActivity {
         removeAllChat = menu.findItem(R.id.main_remove_chat_option);
         voiceMode = menu.findItem(R.id.main_voice_mode);
         resetLayout = menu.findItem(R.id.main_reset_layout);
-        call = menu.findItem(R.id.call);
+        call = menu.findItem(R.id.call_icon);
+
 
         changeBG.setEnabled(false);
         saveChat.setEnabled(false);
@@ -192,7 +194,43 @@ public class MainActivity extends AppCompatActivity {
 
         if(item.getItemId() == R.id.main_reset_layout)
             resetLayoutAlertDialog();
-        return true;
+
+        if (item.getItemId() == R.id.call_icon)
+            //Toast.makeText(MainActivity.this, "Connectez vous d'abord...", Toast.LENGTH_SHORT).show();
+            openCallTypeDialog();
+         return true;
+    }
+
+    private void openCallTypeDialog() {
+        final AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
+        View mView = getLayoutInflater().inflate(R.layout.choise_call_type, null);
+
+        TextView voicecall = (TextView) mView.findViewById(R.id.voice_call);
+        TextView videocall = (TextView) mView.findViewById(R.id.video_call);
+
+        alert.setView(mView);
+
+        final AlertDialog alertDialog = alert.create();
+        alertDialog.setCanceledOnTouchOutside(false);
+
+        voicecall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "Fonctionnalité en cours de develloppement...", Toast.LENGTH_SHORT).show();
+                alertDialog.dismiss();
+            }
+        });
+
+        videocall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // saving chat on confirmation
+                Toast.makeText(MainActivity.this, "Fonctionnalité en cours de develloppement...", Toast.LENGTH_SHORT).show();
+                alertDialog.dismiss();
+            }
+        });
+
+        alertDialog.show();
     }
 
     private void resetLayoutAlertDialog() {
@@ -249,7 +287,6 @@ public class MainActivity extends AppCompatActivity {
             changeBG.setEnabled(false);
             removeAllChat.setEnabled(false);
             resetLayout.setEnabled(false);
-            call.setEnabled(false);
             Toast.makeText(MainActivity.this, "Mode Voix Activé", Toast.LENGTH_SHORT).show();
 
 
@@ -264,7 +301,6 @@ public class MainActivity extends AppCompatActivity {
             changeBG.setEnabled(true);
             removeAllChat.setEnabled(true);
             resetLayout.setEnabled(true);
-            call.setEnabled(true);
             Toast.makeText(MainActivity.this, "Mode Voix Désactivé", Toast.LENGTH_SHORT).show();
 
 
@@ -482,11 +518,11 @@ public class MainActivity extends AppCompatActivity {
             //mToolbar.setBackgroundColor(Color.parseColor("#DBAC30"));
         }
         else if(msg.equals("bg@%@bg9")){
-            thirdLayout.setBackgroundResource(R.drawable.all_start_wich_linux);
+            thirdLayout.setBackgroundResource(R.drawable.arch_linux);
             //mToolbar.setBackgroundColor(Color.parseColor("#095061"));
         }
         else if(msg.equals("bg@%@bg0")){
-            thirdLayout.setBackgroundResource(R.drawable.arch_linux);
+            thirdLayout.setBackgroundResource(R.drawable.all_start_wich_linux);
             //mToolbar.setBackgroundColor(Color.parseColor("#233E4E"));
         }
     }
@@ -497,7 +533,7 @@ public class MainActivity extends AppCompatActivity {
         View mView = getLayoutInflater().inflate(R.layout.custom_disconnect_dialog, null);
 
         TextView textView = mView.findViewById(R.id.custom_disconnect_dialog_textView);
-        textView.setText("Êtes vous sûr de vouloir sauvegarder la discussion? elle sera stockée dans android/data/com.example.p2pmessenger/");
+        textView.setText("Êtes vous sûr de vouloir sauvegarder la discussion? elle sera stockée dans android/data/com.example.lanchatapp/");
         Button btn_cancel = (Button) mView.findViewById(R.id.btn_cancel);
         Button btn_yes = (Button) mView.findViewById(R.id.btn_yes);
 
@@ -954,6 +990,7 @@ public class MainActivity extends AppCompatActivity {
             changeBG.setEnabled(false);
             saveChat.setEnabled(false);
             disconnect.setEnabled(false);
+            call.setEnabled(false);
             getSupportActionBar().setTitle("LanChatApp --------| by: Jiji");
             firstLayout.setVisibility(View.VISIBLE);
 

@@ -49,10 +49,6 @@
         <!-- user click korlei jate ashe -->
 
     </item>
-    <item
-        android:id="@+id/call"
-        android:title="@string/passer_un_appel"
-        app:showAsAction="never" />
 
 
 </menu>
